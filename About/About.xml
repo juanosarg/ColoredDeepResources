@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
   <name>Colored deep resources</name>
-  <author>Kikohi</author>
+  <author>Kikohi, Sarg</author>
   <description>Color deep resources, so you can easily distinguish them.</description>
   <supportedVersions>
     <li>1.3</li>
     <li>1.4</li>
+	<li>1.5</li>
   </supportedVersions>
   <packageId>kikohi.ColoredDeepResources</packageId>
   <modDependencies>

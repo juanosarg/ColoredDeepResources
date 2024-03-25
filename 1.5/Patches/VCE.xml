@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+	<Operation Class="PatchOperationFindMod">
+		<mods>
+			<li>Vanilla Cooking Expanded</li>
+		</mods>
+		<match Class="PatchOperationAdd">
+			<xpath>/Defs/ThingDef[defName="VCE_Salt"]/modExtensions</xpath>
+			<value>
+				<li Class="VFECore.ThingDefExtension">
+					<deepColor>(0.95, 0.7, 0.54)</deepColor>
+					<transparencyMultiplier>0.6</transparencyMultiplier>
+				</li>
+			</value>
+		</match>
+	</Operation>
+</Patch>
