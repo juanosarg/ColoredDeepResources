@@ -89,11 +89,14 @@ namespace DeepLumpColor
             var middleWith = (int)(rect.width - (sLineHeight * 2));
 
             var lessRect = new Rect(rect.x, rect.y, sLineHeight, rect.height);
-            if (Widgets.ButtonText(lessRect, "-") && color.r / 1.5f >= 0 && color.g / 1.5f >= 0 && color.b / 1.5f >= 0)
+            if (Widgets.ButtonText(lessRect, "-"))
             {
                 color.r /= 1.5f;
+                if(color.r < 0) { color.r = 0; }
                 color.g /= 1.5f;
+                if (color.g < 0) { color.g = 0; }
                 color.b /= 1.5f;
+                if (color.b < 0) { color.b = 0; }
             }
 
             var middleRect = new Rect(rect.x + sLineHeight, rect.y, middleWith, rect.height);
@@ -102,11 +105,14 @@ namespace DeepLumpColor
             Text.Anchor = TextAnchor.UpperLeft;
 
             var plusRect = new Rect(rect.x + sLineHeight + middleWith, rect.y, sLineHeight, rect.height);
-            if (Widgets.ButtonText(plusRect, "+") && color.r * 1.5f <= 255 && color.g * 1.5f <= 255 && color.b * 1.5f <= 255)
+            if (Widgets.ButtonText(plusRect, "+"))
             {
                 color.r *= 1.5f;
+                if (color.r > 1) { color.r = 1; }
                 color.g *= 1.5f;
+                if (color.g > 1) { color.g = 1; }
                 color.b *= 1.5f;
+                if (color.b > 1) { color.b = 1; }
             }
         }
 
