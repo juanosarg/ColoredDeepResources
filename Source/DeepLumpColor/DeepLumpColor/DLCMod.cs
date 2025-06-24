@@ -92,7 +92,7 @@ namespace DeepLumpColor
             if (Widgets.ButtonText(lessRect, "-"))
             {
                 color.r /= 1.5f;
-                if(color.r < 0) { color.r = 0; }
+                if (color.r < 0) { color.r = 0; }
                 color.g /= 1.5f;
                 if (color.g < 0) { color.g = 0; }
                 color.b /= 1.5f;

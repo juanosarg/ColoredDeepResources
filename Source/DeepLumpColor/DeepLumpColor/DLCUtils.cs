@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using Verse;
-using VFECore;
+using VEF.Things;
 
 namespace DeepLumpColor
 {
